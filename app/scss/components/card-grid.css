@@ -1,0 +1,44 @@
+.card-grid {
+  --gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  gap: var(--gap);
+}
+.card-grid .card__subtitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--dark-text1);
+}
+.card-grid .card__count {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 0;
+}
+.card-grid .card__change {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-color2);
+}
+.card-grid .card__change--up {
+  color: var(--limegreen);
+}
+.card-grid .card__change--down {
+  color: var(--brightred);
+}
+.card-grid img {
+  justify-self: end;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+@media (min-width: 40em) {
+  .card-grid {
+    --gap: 2rem;
+  }
+}
+@media (min-width: 71.875em) {
+  .card-grid {
+    --gap: 3rem;
+  }
+}/*# sourceMappingURL=card-grid.css.map */

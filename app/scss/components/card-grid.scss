@@ -1,0 +1,52 @@
+@use '../util' as *;
+
+.card-grid {
+	--gap: 1.5rem;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: minmax(0, 1fr);
+	gap: var(--gap);
+
+	.card__subtitle {
+		font-size: rem(18);
+		font-weight: 700;
+		color: var(--dark-text1);
+	}
+
+	.card__count {
+		font-size: rem(48);
+		font-weight: 700;
+		color: var(--text-color);
+		margin-bottom: 0;
+	}
+
+	.card__change {
+		font-size: rem(16);
+		font-weight: 700;
+		color: var(--text-color2);
+	}
+
+	.card__change--up {
+		color: var(--limegreen);
+	}
+
+	.card__change--down {
+		color: var(--brightred);
+	}
+
+	img {
+		justify-self: end;
+		width: rem(36);
+		height: rem(36);
+	}
+
+	@media (min-width: 40em) {
+		--gap: 2rem;
+	}
+
+	@media (min-width: 71.875em) {
+		--gap: 3rem;
+	}
+}
+
